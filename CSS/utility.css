@@ -1,0 +1,120 @@
+ .border {
+   border: 2px solid red;
+   margin: 3px;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ .justify-center {
+   justify-content: center;
+ }
+
+ .itmes-center {
+   align-items: center;
+ }
+
+ .bg-black {
+   background-color: black;
+   /* background: transparent;   */
+
+   color: white;
+ }
+
+ .invert {
+   filter: invert(1);
+ }
+
+ .bg-grey {
+   background-color: #121212;
+   /* background: transparent; */
+
+ }
+
+ .rounded {
+   border-radius: 5px;
+ }
+
+ .m-1 {
+   margin: 5px;
+ }
+
+ .p-1 {
+   padding: 10px;
+ }
+
+
+
+ /* scroll bar code */
+
+ /* === Global dark scrollbar for the whole page === */
+ :root {
+   --scroll-track: #0f1113;
+   /* track (background) */
+   --scroll-thumb: #2b2f33;
+   /* thumb (draggable) */
+   --scroll-thumb-hover: #3a4046;
+   --scroll-thumb-active: #4b5157;
+   --scroll-thumb-border: rgba(255, 255, 255, 0.04);
+   --scroll-width: 12px;
+ }
+
+ /* WebKit (Chrome, Edge, Safari) */
+ *::-webkit-scrollbar {
+   width: var(--scroll-width);
+   height: var(--scroll-width);
+   /* horizontal scrollbar */
+ }
+
+ *::-webkit-scrollbar-track {
+   background: var(--scroll-track);
+   border-radius: 8px;
+ }
+
+ *::-webkit-scrollbar-thumb {
+   background: linear-gradient(180deg, var(--scroll-thumb), var(--scroll-thumb-hover));
+   border-radius: 8px;
+   border: 2px solid var(--scroll-thumb-border);
+   /* subtle separation */
+   min-height: 24px;
+ }
+
+ /* Hover and active states */
+ *::-webkit-scrollbar-thumb:hover {
+   background: var(--scroll-thumb-hover);
+ }
+
+ *::-webkit-scrollbar-thumb:active {
+   background: var(--scroll-thumb-active);
+ }
+
+ /* Firefox (uses two properties) */
+ html {
+   scrollbar-width: thin;
+   /* auto | thin | none */
+   scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+   /* thumb track */
+ }
+
+ /* A handy class for specific scrollable elements */
+ .dark-scroll {
+   overflow: auto;
+   scrollbar-width: thin;
+   /* firefox */
+   -webkit-overflow-scrolling: touch;
+ }
+
+ /* If you want a slightly different look for small scroll areas */
+ .small-scroll::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+ }
+
+ .small-scroll::-webkit-scrollbar-thumb {
+   border-radius: 6px;
+ }
+
+ /* Optional: hide scrollbar but keep scroll (for a minimalist style) */
+ /* .hide-scroll { scrollbar-width: none; } */
+ /* .hide-scroll::-webkit-scrollbar { display: none; } */

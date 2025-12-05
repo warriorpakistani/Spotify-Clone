@@ -1,0 +1,125 @@
+/* For making gresponsive */
+@media (max-width: 1100px) {
+  .left {
+    /* background-color: #35ce6b; */
+    position: absolute;
+    left: -170%;
+    transition: all .3s;
+    z-index: 1;
+    padding: 0;
+    width: 470px;
+    padding: 0;
+  }
+
+.volDur{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  .right {
+    width: 100vw;
+    margin: 0;
+    height: 875px;
+  }
+.card{
+  width: 45vw;
+}
+  .playbar {
+    position: inherit;
+    width: calc(100vw - 110px);
+
+  }
+
+  .songinfo {
+    width: auto;
+  }
+
+  .aboveBar {
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+  }
+
+  .seekbar {
+    width: calc(100vw - 110px);
+    width: 86vw;
+    bottom: 370px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .left .close {
+    display: block;
+    position: absolute;
+    width: 30px;
+    right: 10px;
+    top: 15px;
+
+  }
+
+  .card {
+    width: 85w;
+  }
+
+  .cardContainer {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .svgs {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 750px){
+  .card{
+  width: 75vw;
+}
+.aboveBar{
+  align-self: center;
+}
+}
+@media (max-width: 430px) {
+  .seekbar {
+    width: 65%;
+    bottom: 370px;
+  }
+.card{
+  width: 55vw;
+}
+  .songInfo {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .buttons {
+    display: flex;
+  }
+  .seekbar{
+    bottom: 350PX;
+  }
+
+  .songInfo {
+    width: auto;
+  }
+
+
+  .buttons>* {
+    margin: 0 12px;
+  }
+
+  .header>* {
+    padding: 10px;
+  }
+}
