@@ -185,7 +185,12 @@ async function main() {
         }
     });
 
-
+  // Update the song list UI
+        let list = document.querySelector(".songList ol");
+        if (!list) {
+            console.error("Song list element not found");
+            return songs || [];
+        }
     
     // TIME UPDATE
     currentSong.addEventListener("timeupdate", () => {

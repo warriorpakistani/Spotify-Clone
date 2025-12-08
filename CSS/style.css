@@ -249,8 +249,17 @@
 .songList ol {
   font-size: 13px;
   padding: 0 10px;
+  /* color: rgba(184, 11, 11, 0.637); */
 }
 
+.songList h3{
+  font-size: 28px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  color: red;
+  
+}
 .songList ol li {
   display: flex;
   justify-content: space-between;
